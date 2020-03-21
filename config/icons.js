@@ -1,7 +1,9 @@
 module.exports = function() {
   return {
     'free-solid-svg-icons': [
-      'hashtag'
+      'hashtag',
+      'trophy',
+      'eye'
     ]
   };
 };
