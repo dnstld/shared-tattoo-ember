@@ -1,13 +1,10 @@
 .card-most-liked {
   &_img {
-    @apply w-full bg-gray-800;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    @apply w-full bg-gray-800 bg-cover bg-center bg-no-repeat;
 
     &::after {
       content: "";
-      display: block;
+      @apply block;
       padding-bottom: 100%;
     }
   }
