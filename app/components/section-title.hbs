@@ -1,3 +1,10 @@
-<h1 class="text-xl md:text-2xl lg:text-3xl text-gray-500 uppercase font-thin">
+<h1
+  class="text-xl md:text-2xl lg:text-3xl text-gray-500 uppercase font-thin"
+  ...attributes
+>
+  {{#if @icon}}
+    <FaIcon @icon={{@icon}} class="text-inherit mr-2" />
+  {{/if}}
+
   {{@title}}
 </h1>

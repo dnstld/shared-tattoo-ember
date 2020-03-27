@@ -1,0 +1,14 @@
+.card-most-liked {
+  &_img {
+    @apply w-full bg-gray-800;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &::after {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
+  }
+}

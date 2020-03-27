@@ -394,7 +394,10 @@ module.exports = {
       '1': '1',
       '2': '2',
     },
-    textColor: theme => theme('colors'),
+    textColor: theme => ({
+      ...theme('colors'),
+      'inherit': 'inherit',
+    }),
     width: theme => ({
       auto: 'auto',
       ...theme('spacing'),

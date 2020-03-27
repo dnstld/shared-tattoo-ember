@@ -1,22 +1,31 @@
-<a
-  href={{@href}}
-  target="blank"
-  class="rounded overflow-hidden shadow-lg bg-gray-100 relative"
-  ...attributes>
-
-  <FaIcon @icon="eye" class="absolute top-0 right-0 text-white opacity-25 m-4 text-4xl" />
-
-  <img
-    class="w-full"
-    src={{@src}}
-    alt={{@alt}}>
+<div class="card-most-liked overflow-hidden shadow-lg bg-gray-100 rounded" ...attributes>
+  <div
+    class="card-most-liked_img"
+    style="background-image: url({{@src}});"
+    role="img"
+    aria-label={{@alt}}
+  ></div>
 
   <div class="px-6 py-4">
-    <h2 class="font-bold text-xl mb-2">
-      <FaIcon @icon="trophy" class="text-yellow-500" /> {{@year}}
+    <h2 class="text-lg md:text-xl lg:text-2xl text-gray-700 uppercase mb-2">
+      {{@year}}
     </h2>
     <p class="text-gray-700 text-base">
       {{@description}}
     </p>
+    <hr class="my-4">
+    <footer class="flex justify-between items-end">
+      <small class="text-gray-500">
+        {{@date}}
+      </small>
+      <a
+        href={{@href}}
+        target="blank"
+        class="bg-gray-800 hover:bg-gray-800 border border-gray-700 text-gray-500 lg:text-lg py-2 px-4 rounded inline-block"
+      >
+        <FaIcon @icon="eye" class="text-inherit mr-2" />
+        See post
+      </a>
+    </footer>
   </div>
-</a>
+</div>
