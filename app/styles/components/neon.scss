@@ -10,22 +10,16 @@
   @apply text-red-600 text-5xl;
   font-family: neon;
   text-shadow: 0 0 3vw #f56565;
-}
 
-@screen md {
-  .neon {
+  @screen md {
     @apply text-6xl;
   }
-}
 
-@screen lg {
-  .neon {
+  @screen lg {
     @apply text-8xl;
   }
-}
 
-@screen xl {
-  .neon {
+  @screen xl {
     @apply text-10xl;
   }
 }

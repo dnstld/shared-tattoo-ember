@@ -19,11 +19,14 @@ module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     postcssOptions: {
       compile: {
+        extension: 'scss',
+        enabled: true,
+        parser: require('postcss-scss'),
         plugins: [
           {
-            module: require('postcss-import'),
+            module: require('@csstools/postcss-sass'),
             options: {
-              path: ['node_modules']
+              includePaths: ['node_modules']
             }
           },
           require('tailwindcss')('./app/tailwind/config.js'),

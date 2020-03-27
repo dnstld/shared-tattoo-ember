@@ -1,0 +1,22 @@
+<a
+  href={{@href}}
+  target="blank"
+  class="rounded overflow-hidden shadow-lg bg-gray-100 relative"
+  ...attributes>
+
+  <FaIcon @icon="eye" class="absolute top-0 right-0 text-white opacity-25 m-4 text-4xl" />
+
+  <img
+    class="w-full"
+    src={{@src}}
+    alt={{@alt}}>
+
+  <div class="px-6 py-4">
+    <h2 class="font-bold text-xl mb-2">
+      <FaIcon @icon="trophy" class="text-yellow-500" /> {{@year}}
+    </h2>
+    <p class="text-gray-700 text-base">
+      {{@description}}
+    </p>
+  </div>
+</a>

@@ -1,72 +1,28 @@
 <Jumbotron />
 
 <section class="container px-4 md:px-6">
-  <h1 class="text-xl md:text-2xl lg:text-3xl text-gray-500 uppercase font-thin">Most liked tattoos</h1>
+  <SectionTitle @title="Most liked tattoos" />
+
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 xl:gap-12 my-4">
-    <a
-      href="https://www.instagram.com/p/Br6UnoiAEBm/?utm_source=ig_web_copy_link"
-      target="blank"
-      class="rounded overflow-hidden shadow-lg bg-gray-100 relative">
+    <CardMostLiked
+      @href="https://www.instagram.com/p/Br6UnoiAEBm/?utm_source=ig_web_copy_link"
+      @src="assets/images/best-of-2019-shared-tattoo.jpg"
+      @alt="Most liked tattoo of 2019"
+      @year="Best of 2019"
+      @description="Khail Aitken (@khailtattooer) is an artist based in Perth, the capital and largest city of the Australian state of Western Australia, with more than 70k followers on Instagram." />
 
-      <FaIcon @icon="eye" class="absolute top-0 right-0 text-white opacity-25 m-4 text-4xl" />
+    <CardMostLiked
+      @href="https://www.instagram.com/p/Br6UnoiAEBm/?utm_source=ig_web_copy_link"
+      @src="assets/images/best-of-2019-shared-tattoo.jpg"
+      @alt="Most liked tattoo of 2018"
+      @year="Best of 2018"
+      @description="Khail Aitken (@khailtattooer) is an artist based in Perth, the capital and largest city of the Australian state of Western Australia, with more than 70k followers on Instagram." />
 
-      <img
-        class="w-full"
-        src="assets/images/best-of-2019-shared-tattoo.jpg"
-        alt="Most liked tattoo of 2019">
-
-      <div class="px-6 py-4">
-        <h2 class="font-bold text-xl mb-2">
-          <FaIcon @icon="trophy" class="text-yellow-500" /> Best of 2019
-        </h2>
-        <p class="text-gray-700 text-base">
-          Khail Aitken (@khailtattooer) is an artist based in Perth, the capital and largest city of the Australian state of Western Australia, with more than 70k followers on Instagram.
-        </p>
-      </div>
-    </a>
-
-    <a
-      href="https://www.instagram.com/p/Br6UnoiAEBm/?utm_source=ig_web_copy_link"
-      target="blank"
-      class="rounded overflow-hidden shadow-lg bg-gray-100 relative">
-
-      <FaIcon @icon="eye" class="absolute top-0 right-0 text-white opacity-25 m-4 text-4xl" />
-
-      <img
-        class="w-full"
-        src="assets/images/best-of-2019-shared-tattoo.jpg"
-        alt="Most liked tattoo of 2019">
-
-      <div class="px-6 py-4">
-        <h2 class="font-bold text-xl mb-2">
-          <FaIcon @icon="trophy" class="text-yellow-500" /> Best of 2019
-        </h2>
-        <p class="text-gray-700 text-base">
-          Khail Aitken (@khailtattooer) is an artist based in Perth, the capital and largest city of the Australian state of Western Australia, with more than 70k followers on Instagram.
-        </p>
-      </div>
-    </a>
-
-    <a
-      href="https://www.instagram.com/p/BZJiL2yAnIz/?utm_source=ig_web_button_share_sheet"
-      target="blank"
-      class="rounded overflow-hidden shadow-lg bg-gray-100 relative">
-
-      <FaIcon @icon="eye" class="absolute top-0 right-0 text-white opacity-25 m-4 text-4xl" />
-
-      <img
-        class="w-full"
-        src="assets/images/best-of-2017-shared-tattoo.jpg"
-        alt="Most liked tattoo of 2017">
-
-      <div class="px-6 py-4">
-        <h2 class="font-bold text-xl mb-2">
-          <FaIcon @icon="trophy" class="text-yellow-500" /> Best of 2017
-        </h2>
-        <p class="text-gray-700 text-base">
-          Oozy (@oozy_tattoo) is an artist based in Seoul, the capital and largest metropolis of South Korea, with more than 600k followers on Instagram.
-        </p>
-      </div>
-    </a>
+    <CardMostLiked
+      @href="https://www.instagram.com/p/BZJiL2yAnIz/?utm_source=ig_web_button_share_sheet"
+      @src="assets/images/best-of-2017-shared-tattoo.jpg"
+      @alt="Most liked tattoo of 2017"
+      @year="Best of 2017"
+      @description="Oozy (@oozy_tattoo) is an artist based in Seoul, the capital and largest metropolis of South Korea, with more than 600k followers on Instagram." />
   </div>
 </section>
