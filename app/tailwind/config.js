@@ -5,6 +5,12 @@ module.exports = {
   important: false,
   separator: ':',
   theme: {
+    extend: {
+      screens: {
+        'portrait': {'raw': '(orientation: portrait)'},
+        'landscape': {'raw': '(orientation: landscape)'},
+      }
+    },
     screens: {
       sm: '640px',
       md: '768px',
@@ -256,6 +262,8 @@ module.exports = {
       '4xl': '2.25rem',
       '5xl': '3rem',
       '6xl': '4rem',
+      '8xl': '6rem',
+      '10xl': '8rem',
     },
     fontWeight: {
       hairline: '100',
@@ -335,6 +343,7 @@ module.exports = {
       '0': '0',
       full: '100%',
       screen: '100vh',
+      halfscreen: '50vh',
     },
     minWidth: {
       '0': '0',

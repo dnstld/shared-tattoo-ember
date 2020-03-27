@@ -1,40 +1,10 @@
-<header class="bg-gray-900 h-16 px-4 md:px-6 flex items-center fixed w-screen shadow-lg">
+<header class="bg-gray-900 h-16 px-4 md:px-6 flex items-center fixed z-10 w-screen shadow-lg">
   <div class="flex items-center flex-1">
     <img src="assets/images/shared-tattoo-logo.svg" class="h-10" alt="Shared Tattoo">
-    <h1 class="text-white uppercase text-sm md:text-base lg:text-lg xl:text-xl ml-2">Shared Tattoo</h1>
+    <h1 class="text-white text-sm md:text-base lg:text-xl font-thin uppercase ml-2">Shared Tattoo</h1>
   </div>
-  <a
-    href="https://www.instagram.com/sharedtattoo/"
-    target="blank"
-    class="bg-transparent hover:bg-gray-800 border border-gray-700 text-gray-500 py-2 px-4 rounded"
-  >
-    <FaIcon @icon="hashtag" /> instagram
-  </a>
 </header>
 
-<section class="container pt-16 px-4 md:px-6">
-  <h1 class="text-4xl text-gray-500 font-thin">Most liked tattoos</h1>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 my-4">
-    <a
-      href="https://www.instagram.com/p/Br6UnoiAEBm/?utm_source=ig_web_copy_link"
-      target="blank"
-      class="rounded overflow-hidden shadow-lg bg-gray-100 relative">
-
-      <FaIcon @icon="eye" class="absolute top-0 right-0 text-white opacity-25 m-4 text-4xl" />
-
-      <img
-        class="w-full"
-        src="assets/images/best-of-2019-shared-tattoo.jpg"
-        alt="Most liked tattoo of 2019">
-
-      <div class="px-6 py-4">
-        <h2 class="font-bold text-xl mb-2">
-          <FaIcon @icon="trophy" class="text-yellow-500" /> Best of 2019
-        </h2>
-        <p class="text-gray-700 text-base">
-          Khail Aitken (@khailtattooer) is an artist based in Perth, the capital and largest city of the Australian state of Western Australia, with more than 70k followers on Instagram.
-        </p>
-      </div>
-    </a>
-  </div>
-</section>
+<main class="pt-16 grid gap-16 lg:gap-24 min-h-screen">
+  {{outlet}}
+</main>
