@@ -1,0 +1,13 @@
+home:
+  aboutUs:
+    title: "About us"
+    description:
+      paragraph1: "Co-founded by Denis Toledo in April 9, 2017 amet consectetur adipisicing elit. Velit, maiores officiis praesentium quo deleniti quisquam cupiditate odio aspernatur atque porro assumenda nulla delectus voluptatem repellendus nesciunt et suscipit minus distinctio!"
+      paragraph2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, maiores officiis praesentium quo deleniti quisquam cupiditate odio aspernatur atque porro assumenda nulla delectus voluptatem repellendus nesciunt et suscipit minus distinctio!"
+    community:
+      title: "A place for tattoers and tattoo lovers"
+      subtitle: "Tattoo community"
+      message: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
+      coFounder: "Co-founder"
+  mostLikedTattoos:
+    title: "Most liked tattoos"
