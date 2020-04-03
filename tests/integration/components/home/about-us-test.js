@@ -3,22 +3,22 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
-module('Integration | Component | jumbotron', function(hooks) {
+module('Integration | Component | home/about-us', function(hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function(assert) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`<Jumbotron />`);
+    await render(hbs`<Home::AboutUs />`);
 
     assert.equal(this.element.textContent.trim(), '');
 
     // Template block usage:
     await render(hbs`
-      <Jumbotron>
+      <Home::AboutUs>
         template block text
-      </Jumbotron>
+      </Home::AboutUs>
     `);
 
     assert.equal(this.element.textContent.trim(), 'template block text');
