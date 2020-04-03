@@ -7,20 +7,24 @@ module('Integration | Component | section-title', function(hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
+    assert.expect(2);
 
-    await render(hbs`<SectionTitle />`);
-
-    assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
     await render(hbs`
-      <SectionTitle>
-        template block text
-      </SectionTitle>
+      <SectionTitle @title="template block text" />
     `);
 
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.dom('[data-test-section-title]').hasText('template block text');
+    assert.dom('[data-test-section-title="icon"]').doesNotExist('icon is not rendered');
+  });
+
+  test('it renders with an icon', async function(assert) {
+    assert.expect(2);
+
+    await render(hbs`
+      <SectionTitle @title="template block text" @icon="iconName" />
+    `);
+
+    assert.dom('[data-test-section-title]').hasText('template block text');
+    assert.dom('[data-test-section-title="icon"]').exists('icon is not rendered');
   });
 });

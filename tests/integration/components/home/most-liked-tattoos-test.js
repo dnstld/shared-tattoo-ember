@@ -7,20 +7,11 @@ module('Integration | Component | home/most-liked-tattoos', function(hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
+    assert.expect(2);
 
     await render(hbs`<Home::MostLikedTattoos />`);
 
-    assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      <Home::MostLikedTattoos>
-        template block text
-      </Home::MostLikedTattoos>
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.dom('[data-test-most-liked-tattoos]').exists();
+    assert.dom('[data-test-most-liked-tattoos="title"]').hasText('Most liked tattoos');
   });
 });

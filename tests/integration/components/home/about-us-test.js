@@ -7,20 +7,14 @@ module('Integration | Component | home/about-us', function(hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
+    assert.expect(4);
 
     await render(hbs`<Home::AboutUs />`);
 
-    assert.equal(this.element.textContent.trim(), '');
+    assert.dom('[data-test-about-us]').exists();
+    assert.dom('[data-test-about-us="title"]').hasText('About us');
 
-    // Template block usage:
-    await render(hbs`
-      <Home::AboutUs>
-        template block text
-      </Home::AboutUs>
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.dom('[data-test-about-us="link-denis"]').hasAttribute('href', 'https://www.instagram.com/denistoledo.dev/');
+    assert.dom('[data-test-about-us="img-denis"]').hasAttribute('src', 'assets/images/denis-toledo.jpg');
   });
 });

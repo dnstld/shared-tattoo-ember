@@ -7,20 +7,15 @@ module('Integration | Component | home/jumbotron', function(hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
+    assert.expect(6);
 
     await render(hbs`<Home::Jumbotron />`);
 
-    assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      <Home::Jumbotron>
-        template block text
-      </Home::Jumbotron>
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.dom('[data-test-jumbotron]').exists();
+    assert.dom('[data-test-jumbotron="neon"]').exists();
+    assert.dom('[data-test-jumbotron="title"]').hasText('Sharing daily the world\'s greatest tattoos');
+    assert.dom('[data-test-jumbotron="subtitle"]').hasText('Awesome ideas for your next tattoo.');
+    assert.dom('[data-test-jumbotron="instagram-link"]').hasText('follow on instagram');
+    assert.dom('[data-test-jumbotron="instagram-link"]').hasAttribute('href', 'https://www.instagram.com/sharedtattoo/');
   });
 });

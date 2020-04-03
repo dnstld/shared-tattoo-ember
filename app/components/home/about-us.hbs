@@ -1,6 +1,7 @@
-<section class="container px-4 md:px-6">
+<section class="container px-4 md:px-6" data-test-about-us>
   <SectionTitle
     @title="About us"
+    data-test-about-us="title"
   />
 
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 xl:gap-12">
@@ -21,8 +22,14 @@
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center"
+          data-test-about-us="link-denis"
         >
-          <img class="w-10 h-10 rounded-full mr-2" src="assets/images/denis-toledo.jpg" alt="Denis Toledo">
+          <img
+            class="w-10 h-10 rounded-full mr-2"
+            src="assets/images/denis-toledo.jpg"
+            alt="Denis Toledo"
+            data-test-about-us="img-denis">
+
           <div class="text-sm">
             <p class="text-white">Denis Toledo</p>
             <p class="text-gray-600">Co-founder</p>

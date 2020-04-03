@@ -7,20 +7,11 @@ module('Integration | Component | neon', function(hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
+    assert.expect(2);
 
     await render(hbs`<Neon />`);
 
-    assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      <Neon>
-        template block text
-      </Neon>
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.dom('[data-test-neon]').hasText('TATTOO');
+    assert.dom('[data-test-neon]').hasClass('neon');
   });
 });

@@ -1,9 +1,13 @@
 <h1
   class="text-xl md:text-2xl lg:text-3xl text-gray-500 uppercase font-thin mb-4"
+  data-test-section-title
   ...attributes
 >
   {{#if @icon}}
-    <FaIcon @icon={{@icon}} class="text-inherit mr-2" />
+    <FaIcon
+      @icon={{@icon}}
+      class="text-inherit mr-2"
+      data-test-section-title="icon"/>
   {{/if}}
 
   {{@title}}
