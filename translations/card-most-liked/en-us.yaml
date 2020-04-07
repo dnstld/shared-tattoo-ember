@@ -1,0 +1,14 @@
+cardMostLiked:
+  nineteen:
+    title: "Best of 2019"
+    description: "Khail Aitken (@khailtattooer) is an artist based in Perth, the capital and largest city of the Australian state of Western Australia, with more than 70k followers on Instagram."
+    date: "December 27"
+  eighteen:
+    title: "Best of 2018"
+    description: "Robson Carvalho (@robcarvalhoart) is an artist based in São Paulo, the capital and the most populous city in Brazil, with more than 250k followers on Instagram."
+    date: "March 25"
+  seventeen:
+    title: "Best of 2017"
+    description: "Oozy (@oozy_tattoo) is an artist based in Seoul, the capital and largest metropolis of South Korea, with more than 600k followers on Instagram."
+    date: "September 17"
+  seePost: See post

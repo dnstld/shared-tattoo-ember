@@ -384,7 +384,10 @@ module.exports = {
       '11': '11',
       '12': '12',
     },
-    padding: theme => theme('spacing'),
+    padding: theme => ({
+      ...theme('spacing'),
+      '11/12': '91.666667%',
+    }),
     placeholderColor: theme => theme('colors'),
     stroke: {
       current: 'currentColor',

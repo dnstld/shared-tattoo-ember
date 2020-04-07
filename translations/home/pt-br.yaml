@@ -1,0 +1,11 @@
+home:
+  aboutUs:
+    title: "Sobre nós"
+    description:
+      paragraph1: "Fundado por Denis Toledo, designer e desenvolvedor web, em 9 de Abril de 2017 nasce o Shared Tattoo."
+      paragraph2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, maiores officiis praesentium quo deleniti quisquam cupiditate odio aspernatur atque porro assumenda nulla delectus voluptatem repellendus nesciunt et suscipit minus distinctio!"
+    community:
+      title: "Como surgiu o Shared Tattoo?"
+      subtitle: "Um lugar para amantes da tatuagem"
+      message: "\"A página surgiu a partir da vontade de compartilhar a arte de tatuadores que transbordavam o meu feed do Instagram junto com a vontade de desenvolver um aplicativo web onde apaixonados por tatuagens pudessem ter acesso a conteúdo de qualidade.\""
+      coFounder: "Fundador"

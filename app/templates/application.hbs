@@ -3,6 +3,21 @@
     <img src="assets/images/shared-tattoo-logo.svg" class="h-10" alt="Shared Tattoo">
     <h1 class="text-white text-sm md:text-base lg:text-xl font-thin uppercase ml-2">Shared Tattoo</h1>
   </div>
+  <div>
+    {{#each selections as |model|}}
+      <button
+        type="button"
+        class="text-xs p-1 {{if model.active "text-white" "text-gray-600"}}"
+        {{on "click" (fn this.changeLocale model.locale)}}
+      >
+        {{#if (eq model.locale "pt-br")}}
+          {{t "language.ptBr"}}
+        {{else}}
+          {{t "language.enUs"}}
+        {{/if}}
+      </button>
+    {{/each}}
+  </div>
 </header>
 
 <main class="pt-16 grid gap-16 lg:gap-24 min-h-screen text-gray-400">
@@ -10,12 +25,27 @@
 </main>
 
 <footer class="w-screen bg-gray-800 mt-16 lg:mt-24 py-4 md:py-6">
-  <div class="container px-4 md:px-6">
-    <SectionTitle
-      @title="Footer"
-    />
+  <div class="container px-4 md:px-6 flex items-center justify-between">
     <div class="">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minus quasi corporis unde pariatur suscipit, deleniti, nemo, nam dolor commodi consequuntur distinctio exercitationem porro quaerat! Ratione fugit deleniti maxime perspiciatis?</p>
+      <p class="text-xs">© 2017 Shared Tattoo</p>
+    </div>
+    <div>
+      <a
+        href="https://www.instagram.com/sharedtattoo/"
+        target="blank"
+        class=""
+        data-test-jumbotron="instagram-link"
+      >
+        {{t "jumbotron.instagram"}}
+      </a>
+      <a
+        href="https://www.facebook.com/sharedtattoo/"
+        target="blank"
+        class=""
+        data-test-jumbotron="facebook-link"
+      >
+        {{t "jumbotron.facebook"}}
+      </a>
     </div>
   </div>
 </footer>

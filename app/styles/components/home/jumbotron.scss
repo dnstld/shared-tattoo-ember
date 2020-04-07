@@ -1,1 +1,4 @@
-.jumbotron {}
+.jumbotron {
+  background: url(./images/jumbotron.jpg);
+  @apply bg-cover bg-fixed bg-center bg-no-repeat;
+}
