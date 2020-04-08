@@ -3,11 +3,13 @@
   data-test-card-most-liked
   ...attributes
 >
-  <AspectRatio
-    @ratio="1:1"
-    @imgSrc={{@src}}
-    @imgAlt={{@title}}
-    data-test-card-most-liked="img" />
+  <AspectRatio @ratio="1:1">
+    <img
+      src={{@src}}
+      alt={{@title}}
+      class="absolute object-cover w-full h-full"
+      data-test-card-most-liked="img">
+  </AspectRatio>
 
   <div class="px-6 py-4 flex justify-between flex-col flex-1">
     <div>
