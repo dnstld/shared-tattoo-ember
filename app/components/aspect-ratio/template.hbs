@@ -1,5 +1,8 @@
-<div class="relative pb-1/1 bg-blue-300" ...attributes>
+<div class="relative bg-blue-300" style={{this.style}} ...attributes>
   <div class="absolute inset-0">
-    {{yield}}
+    <img
+      src={{@imgSrc}}
+      alt={{@imgAlt}}
+      class="absolute object-cover w-full h-full">
   </div>
 </div>
